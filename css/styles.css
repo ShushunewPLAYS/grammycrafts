@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: #FCD8D4;
+  color: #986D8E;
   font-size:5.65rem;
   line-height: 2;
   margin: 50px auto 0 auto;
@@ -18,7 +18,8 @@ h1 {
 }
 
 h2 {
-  color: #FCD8D4;
+  /* original - FCD8D4 */
+  color: #986D8E;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
@@ -27,11 +28,12 @@ h2 {
 
 
 h3{
-  color: #F8E2CF ;
+  color: #986D8E ;
   font-family: 'Montserrat', sans-serif;
 }
 
 p {
+  color: #986D8E;
   line-height: 2;
 }
 
@@ -57,7 +59,7 @@ a:hover {
 
 
 .top-container {
-  background-color: #F5C6AA;
+  background-color: #EFE3D0;
   position: relative;
   padding-top: 100px;
 }
@@ -68,7 +70,7 @@ a:hover {
 }
 
 .bottom-container {
-  background-color: #FCD8D4;
+  background-color: #EFE3D0;
   padding: 50px 0 20px;
 
 }
@@ -94,7 +96,7 @@ a:hover {
 }
 
 .copyright {
-  color: #EAF6F6;
+  color: #986D8E;
   font-size: 0.75rem;
   padding: 20px 0px;
 }
@@ -112,11 +114,7 @@ a:hover {
 }
 
 
-.gaming.png {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
+
 
 
 .code-skill-description {
@@ -130,26 +128,77 @@ a:hover {
 
 
 .btn {
-	box-shadow: 0px 1px 0px 0px #FCD8D4;
-	background:linear-gradient(to bottom, #F8E2CF 5%, #FCD8D4 100%);
-	background-color:#FCD8D4;
+	box-shadow: 0px 1px 0px 0px #986D8E;
+	background:linear-gradient(to bottom, #B97A95 5%, #986D8E 175%);
+	background-color:#986D8E;
 	border-radius:8px;
-	border:1px solid #FCD8D4;
+	border:1px solid #986D8E;
 	display:inline-block;
 	cursor:pointer;
-	color:#F5C6AA;
+	color:#986D8E;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
 	padding:10px 14px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #F8E2CF;
+	text-shadow:0px -1px 0px #B97A95;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #FCD8D4 5%, #FCD8D4 100%);
-	background-color:#FCD8D4;
+	background:linear-gradient(to bottom, #B97A95 5%, #986D8E 100%);
+	background-color:#B97A95;
 }
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+
+
+
+/* css image section */
+
+/* Hover text */
+.container {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px; /*auto*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+  object-fit: cover;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #986D8E;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
